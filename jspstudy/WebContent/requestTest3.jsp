@@ -18,6 +18,7 @@
 		out.println("서버의 도메인명 : "+ request.getServerName()+"<br/>");
 		out.println("서버의 포트번호 : "+ request.getServerPort()+"<br/>");
 		out.println("요청URL : "+ request.getRequestURL()+"<br/>");
+		
 		out.println("클라이언트IP : "+ request.getRemoteAddr()+"<br/>");
 		out.println("ContextPath : "+ request.getContextPath()+"<br/>");
 	%>

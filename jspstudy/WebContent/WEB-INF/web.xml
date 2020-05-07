@@ -3,5 +3,19 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
-	<display-name>jspstudy</display-name>	
+	<display-name>jspstudy</display-name>
+	<servlet>
+	<servlet-name>configTest1</servlet-name>
+	<jsp-file>/configTest1.jsp</jsp-file>
+	<init-param>
+		<param-name>fildDir</param-name>
+		<param-value>C:\tomcat-9</param-value>
+	</init-param>	
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>configTest1</servlet-name>
+	<url-pattern>/configTest1.jsp</url-pattern>
+	</servlet-mapping>
+	
+	
 </web-app>
