@@ -66,5 +66,6 @@
 		<input type="hidden" name="origfilename2" value="<%=origfilename2 %>">
 	</form>
 	<a href="#" onclick="javascript:filecheck.submit()">업로드 확인 및 다운로드 페이지 이동</a>
+	<!-- 멀티파트리퀘스트2를 이용한 파일전송 -->
 </body>
 </html>

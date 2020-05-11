@@ -41,11 +41,15 @@ public class PartUploadPro1Servlet extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		String contentDisposition = part.getHeader("content-disposition");
+		/* 클라이언트가 선택한 파일의 이름이 저장된 헤더 */
 		String uploadFileName = getUploadFileName(contentDisposition);
+		/* 클라이언트가 선택한 파일의 이름이 저장된 헤더에서 클라이언트가 선택한 파일의 이름을 가져온다. */
 		part.write(uploadFileName);
+		/* 위 location에서 지정한 위치에 uploadFileName 이라는 이름으로 파일을 저장한다. */
 		out.println("작성자 " + writer + "님이 " + uploadFileName + " 파일을 업로드 하셨습니다.");
 	}
 	
+	/* 크롬인 경우 처리 코드 */
 	private String getUploadFileName(String contentDisposition) {
 		String uploadFileName = null;
 		String[] contentSplitStr = contentDisposition.split(";");

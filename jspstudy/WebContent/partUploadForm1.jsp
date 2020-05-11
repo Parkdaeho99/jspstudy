@@ -13,5 +13,6 @@
 		<label for="partFile1">업로드 파일 : </label><input type="file" name="partFile1" id="partFile1"><br>
 		<input type="submit" value="단일 업로드"/>
 	</form>
+	<!-- 	파트인터페이스를 이용한 파일전송1 --> 
 </body>
 </html>

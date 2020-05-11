@@ -14,5 +14,6 @@
 		<label for="partFile2">업로드 파일2 : </label><input type="file" name="partFile2" id="partFile2"><br>
 		<input type="submit" value="다중 업로드"/>
 	</form>
+	<!-- 	파트인터페이스를 이용한 파일전송2 -->
 </body>
 </html>

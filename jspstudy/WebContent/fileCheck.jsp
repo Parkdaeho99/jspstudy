@@ -20,5 +20,6 @@
 	제목 : <%=subject %><br>
 	파일명1 : <a href="file_down.jsp?file_name=<%=filename1 %>"><%=origfilename1 %></a><br>
 	파일명2 : <a href="file_down.jsp?file_name=<%=filename2 %>"><%=origfilename2 %></a><p>
+	<!-- 멀티파트리퀘스트3를 이용한 파일전송 -->
 </body>
 </html>
